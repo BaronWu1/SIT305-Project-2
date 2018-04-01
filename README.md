@@ -1,5 +1,5 @@
 # SIT305-Project-2
-Student name:Yufei Wu
 
+Student name: Yufei Wu
 
-Studnet id:216236195
+Studnet id: 216236195
