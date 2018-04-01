@@ -2,4 +2,4 @@
 
 Student name: Yufei Wu
 
-Studnet id: 216236195
+Student id: 216236195
