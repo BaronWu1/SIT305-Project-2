@@ -1,4 +1,5 @@
 {
-  "name": "rpg",
-  "displayName": "rpg"
+  "expo": {
+    "sdkVersion": "26.0.0"
+  }
 }
