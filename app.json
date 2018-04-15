@@ -1,5 +1,12 @@
 {
   "expo": {
-    "sdkVersion": "26.0.0"
+    "name": "RPG",
+    "slug": "My RPG Game",
+    "sdkVersion": "26.0.0",
+    "splash": {
+      "backgroundColor": "#FFFFFF",
+      "resizeMode": "contain",
+      "image": "https://cdn2.iconfinder.com/data/icons/down-to-earth/128/G12_RPG.png",
+    }
   }
 }
