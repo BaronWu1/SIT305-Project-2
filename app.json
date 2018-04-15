@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "RPG",
-    "slug": "My RPG Game",
+    "slug": "MyRPGGame",
     "sdkVersion": "26.0.0",
     "splash": {
       "backgroundColor": "#FFFFFF",

@@ -1,2 +1,8 @@
 0414  Baron
 Fixed git hub issue. Cleaned repo, initialised code and fixed gitignore
+
+0415  Baron
+Splash screen
+
+0415 Junda
+Main Menu
