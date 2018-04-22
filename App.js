@@ -1,16 +1,27 @@
 import React from 'react';
-import { StyleSheet, Text, TouchableOpacity, Button, Alert, View } from 'react-native';
+import { StyleSheet, Text, TouchableOpacity, Button, Alert, View ,AppRegistry} from 'react-native';
 import { AppLoading } from 'expo';
+import { StackNavigator } from 'react-navigation';
+import DetailCtr from './Detail';
 
 // Main function
-export default class App extends React.Component {
+class App extends React.Component {
   state = {
     isReady: false,
-    text: ''
+    text: '',
+  };
+
+    static navigationOptions = {
+      title: 'Home',
+      headerStyle: {
+          headerTransparent: true,
+      }
+
   };
 
   // Main render function
   render() {
+
     // Splash screen
     if (!this.state.isReady) {
       return (
@@ -29,26 +40,27 @@ export default class App extends React.Component {
           <Text style={{fontSize: 21}}>Welcome to MY RPG GAME!</Text>
         </View>
 
-        <TouchableOpacity onPress={this._onPressButton}>
+        <TouchableOpacity onPress={() => this._onPressButton(1)
+        }>
           <View style={styles.button}>
             <Text style={styles.buttonText}>New Game</Text>
           </View>
         </TouchableOpacity>
 
-        <TouchableOpacity onPress={this._onPressButton}>
+        <TouchableOpacity onPress={() => this._onPressButton(2)}>
           <View style={styles.button}>
             <Text style={styles.buttonText}>Load Game</Text>
           </View>
         </TouchableOpacity>
 
-        <TouchableOpacity onPress={this._onPressButton}>
+        <TouchableOpacity onPress={() => this._onPressButton(3)}>
           <View style={styles.button}>
             <Text style={styles.buttonText}>Exit</Text>
           </View>
         </TouchableOpacity>
 
 
-        <TouchableOpacity onPress={this._onPressButton}>
+        <TouchableOpacity onPress={() => this._onPressButton(4)}>
           <View>
             <Text style={{color: '#4990e2', fontSize: 17, margin: 20}}>Report a bug?</Text>
           </View>
@@ -59,7 +71,27 @@ export default class App extends React.Component {
 
   }
 
-  _onPressButton() {
+  _onPressButton(num) {
+    switch (num) {
+        case 1://New Game
+            this.props.navigation.navigate('Detail')
+          break;
+        case 2://Load Game
+            alert('developing');
+          break;
+        case 3://Exit
+            alert('developing');
+          break;
+        case 4://Report a Bug
+            alert('developing');
+          break;
+        default://Other
+            alert('developing')
+          break;
+    }
+
+      // alert(this.navigation);
+    // this.navigation.navigate('Detail');
     // Alert.alert('Yo!')
   }
 
@@ -72,6 +104,11 @@ export default class App extends React.Component {
     }
   }
 }
+
+export default StackNavigator({
+    Main: {screen: App},
+    Detail: {screen: DetailCtr }
+});
 
 // Main screen styles
 const styles = StyleSheet.create({
@@ -110,3 +147,7 @@ const styles = StyleSheet.create({
   },
 
 });
+
+// AppRegistry.registerComponent('App',() => RootApp);
+
+// console.disableYellowBox = true;
