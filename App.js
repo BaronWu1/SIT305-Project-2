@@ -77,16 +77,16 @@ class App extends React.Component {
             this.props.navigation.navigate('Detail')
           break;
         case 2://Load Game
-            alert('developing');
+            // alert('developing');
           break;
         case 3://Exit
-            alert('developing');
+            // alert('developing');
           break;
         case 4://Report a Bug
-            alert('developing');
+            // alert('developing');
           break;
         default://Other
-            alert('developing')
+            // alert('developing');
           break;
     }
 
