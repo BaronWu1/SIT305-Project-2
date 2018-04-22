@@ -6,3 +6,11 @@ Splash screen
 
 0415 Junda
 Main Menu
+
+0422 Junda
+Navigation to new game UI
+
+0422 Baron
+Instructions and testing instructions for building and running the App
+Full design of how to implement the whole game
+Verified and briefly explained in the README.md document

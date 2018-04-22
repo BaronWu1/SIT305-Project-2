@@ -29,9 +29,23 @@ npm install
 npm start
 ```
 
+# Key Designs
+Map will be implemented by 2D tiles (with mapping between data and image grid)
+
+Character types: Hero (main character) / NPC / Enemy
+Character attributes: HP MP ATK (DEF AGI LUK)
+
+Special Plots: Animation playback
+Normal Plots: Dialogue system - dialogue text pop up on top of game UI
+
+Battle system layout: info + characters image on both sides
+Battle system actions: menu pop up (attack, rest / defence, counter attack)
+Battle system notification: Pop up event report + fight results
+
+Saving system: position and main quest progress (represented by integer value)
 
 
 # Henry Comments 17/April #
-- Rename worklog to changelog
-- You have two readme files (one of them isn't yours - delete that one)
+- Rename worklog to changelog - done
+- You have two readme files (one of them isn't yours - delete that one) - done
 - You still need many many more updates to Pass. I'll give you until this Sunday to catch up at least 2 commits each of at least 5 hours work each, and then I'll overlook the missing Week 3 + 4 + 5 work.
