@@ -3,11 +3,7 @@ import { StyleSheet, Text, TouchableOpacity, Button, Alert, View } from 'react-n
 import { AppLoading } from 'expo';
 
 
-export default class DetailCtr extends React.Component {
-    // state = {
-    //     isReady: false,
-    //     text: ''
-    // };
+export default class MapUI extends React.Component {
 
     static navigationOptions = {
         headerTransparent: true,
@@ -20,17 +16,6 @@ export default class DetailCtr extends React.Component {
 
     // Main render function
     render() {
-        // Splash screen
-        // if (!this.state.isReady) {
-        //     return (
-        //         <AppLoading
-        //             startAsync={this._cacheResourcesAsync}
-        //             onFinish={() => this.setState({ isReady: true })}
-        //             onError={console.warn}
-        //         />
-        //     );
-        // }
-
         // Main screen
         return (
             <View style={styles.mainContainer}>
@@ -40,21 +25,7 @@ export default class DetailCtr extends React.Component {
 
             </View>
         );
-
     }
-
-    _onPressButton() {
-        // Alert.alert('Yo!')
-    }
-
-    // Holder function for demonstrating splash
-    // async _cacheResourcesAsync() {
-    //     var start = new Date().getTime();
-    //     var end = start;
-    //     while(end < start + 0) {
-    //         end = new Date().getTime();
-    //     }
-    // }
 }
 
 const styles = StyleSheet.create({
@@ -80,18 +51,6 @@ const styles = StyleSheet.create({
         paddingBottom: 30,
     },
 
-    button: {
-        margin: 20,
-        width: 260,
-        alignItems: 'center',
-        backgroundColor: '#2196F3'
-    },
-
-    buttonText: {
-        padding: 20,
-        color: 'white'
-    },
-
 });
 
-module.exports = DetailCtr;
+module.exports = MapUI;
