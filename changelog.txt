@@ -14,3 +14,7 @@ Navigation to new game UI
 Instructions and testing instructions for building and running the App
 Full design of how to implement the whole game
 Verified and briefly explained in the README.md document
+
+0428 Baron
+Restructure UI (like OO style)
+Uploading hand drawn UI wireframes
