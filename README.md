@@ -53,4 +53,11 @@ Saving system: position and main quest progress (represented by integer value)
 # Henry comments 27/April
 - Where is your project? I don't see any files here.
 
+# Baron comments 28/April
+- Hi Henry, did you mean the xcode project files? We are using React Native for this course (which appears to really be the no.1 hybrid app framework, but also supports integrating with native code). The idea initially comes from your encourage of using frameworks such as Cordova. React Native is pretty similar with Cordova.
 
+In terms of xcode project file, we are using expo to bootstrap this project, which means we are not planning to integrate with native code when we start, although we can. However, we can "eject" the project to "expokit", get all the xcode project files and abilities to integrate with native code / native or xcode features. If desired, in the last phase of the project we will do that.
+
+Currently we can run the project by following the instructions section "Instructions of compiling and running" earlier in this README file, although we are still working on the main RPG map grid screen which takes a bit of work.
+
+Please let me know if you have any questions and thanks for your continuous guiding! Thanks.
