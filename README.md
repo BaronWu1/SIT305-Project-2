@@ -49,3 +49,8 @@ Saving system: position and main quest progress (represented by integer value)
 - Rename worklog to changelog - done
 - You have two readme files (one of them isn't yours - delete that one) - done
 - You still need many many more updates to Pass. I'll give you until this Sunday to catch up at least 2 commits each of at least 5 hours work each, and then I'll overlook the missing Week 3 + 4 + 5 work.
+
+# Henry comments 27/April
+- Where is your project? I don't see any files here.
+
+
