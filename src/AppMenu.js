@@ -5,19 +5,10 @@ import { StackNavigator } from 'react-navigation';
 import MapUI from './MapUI';
 
 // Main function
-class App extends React.Component {
+class AppMenu extends React.Component {
   // State of loading (for splash screen to load before screen ready)
   state = {
     isReady: false,
-  };
-
-  // Navigation bar config
-  static navigationOptions = {
-    headerTransparent: true,
-    headerStyle: {
-      borderBottomColor: 'transparent',
-      borderBottomWidth: 0
-    }
   };
 
   // Main render function
@@ -55,14 +46,6 @@ class App extends React.Component {
           </View>
         </TouchableOpacity>
 
-        {/* Exit
-        <TouchableOpacity onPress={() => this._onPressButton(3)}>
-          <View style={styles.button}>
-            <Text style={styles.buttonText}>Exit</Text>
-          </View>
-        </TouchableOpacity>
-        */}
-
         {/* Report Bug */}
         <TouchableOpacity onPress={() => this._onPressButton(4)}>
           <View>
@@ -78,7 +61,7 @@ class App extends React.Component {
   _onPressButton(num) {
     switch (num) {
         case 1: //New Game
-            this.props.navigation.navigate('Detail');
+            this.props.navigation.navigate('Map');
           break;
         case 2: //Load Game
             console.log('TODO: load game');
@@ -106,10 +89,21 @@ class App extends React.Component {
   }
 }
 
-export default StackNavigator({
-    Main: {screen: App},
-    Detail: {screen: MapUI }
-});
+export default StackNavigator(
+  {
+    Menu: {screen: AppMenu},
+    Map: {screen: MapUI },
+  },
+  {
+    navigationOptions: {
+      headerTransparent: true,
+      headerStyle: {
+        borderBottomColor: 'transparent',
+        borderBottomWidth: 0
+      }
+    },
+  }
+);
 
 // Main screen styles
 const styles = StyleSheet.create({
@@ -150,5 +144,4 @@ const styles = StyleSheet.create({
 });
 
 // AppRegistry.registerComponent('App',() => RootApp);
-
 // console.disableYellowBox = true;

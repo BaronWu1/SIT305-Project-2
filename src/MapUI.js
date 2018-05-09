@@ -6,12 +6,7 @@ import { AppLoading } from 'expo';
 export default class MapUI extends React.Component {
 
     static navigationOptions = {
-        headerTransparent: true,
-        headerStyle: {
-            borderBottomColor: 'transparent',
-            borderBottomWidth: 0
-        }
-
+        // headerLeft: null
     };
 
     // Main render function

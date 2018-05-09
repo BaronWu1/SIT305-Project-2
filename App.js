@@ -1,2 +1,2 @@
-import App from './src/AppMenu';
-export default App;
+import AppMenu from './src/AppMenu';
+export default AppMenu;
