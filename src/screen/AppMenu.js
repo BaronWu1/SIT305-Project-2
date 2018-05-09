@@ -47,7 +47,7 @@ class AppMenu extends React.Component {
         </TouchableOpacity>
 
         {/* Report Bug */}
-        <TouchableOpacity onPress={() => this._onPressButton(4)}>
+        <TouchableOpacity onPress={() => this._onPressButton(3)}>
           <View>
             <Text style={{color: '#4990e2', fontSize: 17, margin: 20}}>Report a bug?</Text>
           </View>
@@ -61,21 +61,19 @@ class AppMenu extends React.Component {
   _onPressButton(num) {
     switch (num) {
         case 1: //New Game
-            this.props.navigation.navigate('Map');
-          break;
+            this.props.navigation.navigate('Map')
+          break
         case 2: //Load Game
-            console.log('TODO: load game');
-          break;
-        case 3: //Exit
-            console.log('TODO: exittttttt');
-            handleBackButtonClick();
-          break;
-        case 4: //Report a Bug
-            console.log('TODO: report bug');
-          break;
+            Alert.alert('load game')
+            console.log('TODO: load game')
+          break
+        case 3: //Report a Bug
+            Alert.alert('report bug')
+            console.log('TODO: report bug')
+          break
         default: //Other
-            Alert.alert('Unknown operation detected. Please contact developer.');
-          break;
+            Alert.alert('Unknown operation detected. Please contact developer.')
+          break
     }
   }
 
