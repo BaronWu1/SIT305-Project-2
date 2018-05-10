@@ -1,13 +1,15 @@
 import React from 'react'
 import { createStore } from 'redux'
+import { Provider } from 'react-redux'
 import { reducer } from './src/state/rpgRedux'
-import AppMenu from './src/screen/AppMenu';
+import AppMain from './src/screen/AppMain';
 
 const store = createStore(reducer)
 
-const AppMenuWithStore = () => (
-  <AppMenu store={store}>
-  </AppMenu>
+console.log(store)
+
+const AppMainWithStore = () => (
+  <AppMain store={store}/>
 )
 
-export default AppMenuWithStore;
+export default AppMainWithStore;

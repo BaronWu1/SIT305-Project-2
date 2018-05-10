@@ -17,7 +17,6 @@ export default class MapUI extends React.Component {
                 <View style={styles.mainTitle}>
                     <Text style={{fontSize: 21}}>Welcome</Text>
                 </View>
-
             </View>
         );
     }

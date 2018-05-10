@@ -1,15 +1,30 @@
 import React from 'react';
-import { StyleSheet, Text, TouchableOpacity, Button, Alert, View ,AppRegistry} from 'react-native';
+import { StyleSheet, Text, TouchableOpacity, Button, Alert, View ,AppRegistry } from 'react-native';
 import { AppLoading } from 'expo';
 import { StackNavigator } from 'react-navigation';
 import MapUI from './MapUI';
+import { actionCreators } from '../state/rpgRedux'
 
 // Main function
-class AppMenu extends React.Component {
+class AppMain extends React.Component {
   // State of loading (for splash screen to load before screen ready)
   state = {
     isReady: false,
+    gameState: 'WTF',
   };
+
+  componentWillMount() {
+    // Redux State
+    console.log('ready?')
+    console.log(this.props)
+    // console.log(this.state)
+
+    // const {store} = this.props
+    // store.dispatch(actionCreators.init())
+
+    // const {dispatch} = this.props
+    // dispatch(actionCreators.init())
+  }
 
   // Main render function
   render() {
@@ -53,6 +68,9 @@ class AppMenu extends React.Component {
           </View>
         </TouchableOpacity>
 
+        {/* Redux debug */}
+        <Text>{this.state.gameState}</Text>
+
       </View>
     );
 
@@ -85,11 +103,11 @@ class AppMenu extends React.Component {
       end = new Date().getTime();
     }
   }
-}
+};
 
 export default StackNavigator(
   {
-    Menu: {screen: AppMenu},
+    Menu: {screen: AppMain},
     Map: {screen: MapUI },
   },
   {

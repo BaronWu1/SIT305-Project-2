@@ -1,22 +1,26 @@
 // The types of actions that you can dispatch to modify the state of the store
-export const types = {
+export const actionTypes = {
+  INITIALISE: 'INITIALISE',
   LOAD_GAME: 'LOAD_GAME',
   NEW_GAME: 'NEW_GAME',
 }
 
 // Helper functions to dispatch actions, optionally with payloads
 export const actionCreators = {
+  init: () => {
+    return {type: actionTypes.INITIALISE, payload: null}
+  },
   load: () => {
-    return {type: types.LOAD_GAME, payload: null}
+    return {type: actionTypes.LOAD_GAME, payload: null}
   },
   new: () => {
-    return {type: types.NEW_GAME, payload: null}
+    return {type: actionTypes.NEW_GAME, payload: null}
   }
 }
 
 // Initial state of the store
 const initialState = {
-  gameState: 'NEW_GAME'
+  gameState: 'UNSTARTED'
 }
 
 // Function to handle actions and update the state of the store.
@@ -25,14 +29,19 @@ export const reducer = (state = initialState, action) => {
   const {type, payload} = action
 
   switch (type) {
-    case types.NEW_GAME: {
+    case actionTypes.INITIALISE: {
       return {
-        gameState: 'NEW_GAME',
+        gameState: 'INITIAL',
       }
     }
-    case types.LOAD_GAME: {
+    case actionTypes.NEW_GAME: {
       return {
-        gameState: 'LOAD_GAMEZ',
+        gameState: 'NEW',
+      }
+    }
+    case actionTypes.LOAD_GAME: {
+      return {
+        gameState: 'LOAD',
       }
     }
   }
