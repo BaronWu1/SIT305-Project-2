@@ -18,3 +18,34 @@ Verified and briefly explained in the README.md document
 0428 Baron
 Restructure UI (like OO style)
 Uploading hand drawn UI wireframes
+
+0502 Baron
+Redux game data handling demo up and running (separately)
+
+0504 Junda
+Working on integrating Redux and React Navigation but failed
+
+
+0506 Baron
+We decide to have a back up plan - Baron will start working on a separate Swift / iOS solution while Junda will keep trying and offer help for Swift app too.
+
+0507 Junda
+Upgraded React Navigation to V2.0
+
+0510 Junda
+Initiated Redux in the first React Navigation screen thus integrated React Native and Redux
+
+0510 Baron
+Swift app basic UI and logic up
+
+0513 Junda
+Redux store project + Reducer code + passing info to Map UI done
+
+0516 Junda
+React Native Map controller UI, arrow keys and listener code done
+
+0517 Baron
+Finish Swift app demo version
+
+0518 Baron
+Final polish of Swift up

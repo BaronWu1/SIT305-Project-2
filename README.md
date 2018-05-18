@@ -10,7 +10,22 @@ Student id: 216235896
 
 (Henry has confirmed)
 
-# Instructions of compiling and running
+# Background of implementation
+First of all, we have split to explore different 2 ways to complete the task.
+Initially we are trying to complete it using React Native together. After some work we decided to split to let Junda keep working on React Native while Baron went back to implement the app using the normal Swift way. Eventually both students worked on both apps while the React Native app kind of got stuck and the Swift app is the more complete demo. In the codebase and submission we included all codes from both apps.
+
+# The Swift RPG - compiling and running
+To run the Swift RPG app (from directory "rpg-swift"):
+double click "RPG.xcodeproj" to open XCode and run
+
+# The Swift RPG - features
+Splash screen, full playable game although brief procedure. The main character will have to find the key to the castle to save the princess. He would have to find and talk to the NPC to figure out that there's a key to the castle somewhere and then find the key so he can return to the castle and enter it.
+
+The game is fully developed by Swift / SpriteKit with all main components (controller / screen logic, oo logic, SKS files, musics and other resources) fully separated and structured well. It is reasonable short however fully implemented
+
+# The React Native RPG - compiling and running
+To run the React Native (Expo) RPG app (from directory "rpg-expo"):
+
 ```
 # Install Homebrew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -28,6 +43,9 @@ npm install
 # Run
 npm start
 ```
+
+# The React Native RPG - features
+The implementation is not complete. It features a splash screen, integration to React Navigation and Redux, a main menu and a draft of main game map GUI including control buttons etc. We left it and went for the Swift implementation at very early stage.
 
 # Key Designs
 Map will be implemented by 2D tiles (with mapping between data and image grid)
